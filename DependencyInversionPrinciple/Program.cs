@@ -7,6 +7,7 @@ namespace DependencyInversionPrinciple
 {
 
    //High level part of the system should not depend on low level part of the system
+   //Use abstractions
    public enum Relationship
    {
       Parent,
@@ -24,7 +25,7 @@ namespace DependencyInversionPrinciple
       IEnumerable<Person> FindAllChildrenOf(string name);
    }
 
-   //low level
+   //low level (
    public class Relationships : IRelationshipBrowser
    {
       private List<(Person, Relationship, Person)> relations = new List<(Person, Relationship, Person)>();

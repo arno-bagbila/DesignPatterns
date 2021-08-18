@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StepwiseBuilder", "Stepwise
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionalBuilder", "FunctionalBuilder\FunctionalBuilder.csproj", "{6E3B5082-504C-4C87-BF80-755F69879BAE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacetedBuilder", "FacetedBuilder\FacetedBuilder.csproj", "{98DF6424-9C89-4E37-B439-191897652936}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +69,10 @@ Global
 		{6E3B5082-504C-4C87-BF80-755F69879BAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E3B5082-504C-4C87-BF80-755F69879BAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E3B5082-504C-4C87-BF80-755F69879BAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98DF6424-9C89-4E37-B439-191897652936}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98DF6424-9C89-4E37-B439-191897652936}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98DF6424-9C89-4E37-B439-191897652936}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98DF6424-9C89-4E37-B439-191897652936}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -81,6 +87,7 @@ Global
 		{C43DC699-C7DE-4B96-8EAD-5D34E004BD90} = {9919778B-741C-48AB-B46B-C578AB46DF73}
 		{E21A2D39-F348-4EE4-BFC2-3D956D496CD5} = {9919778B-741C-48AB-B46B-C578AB46DF73}
 		{6E3B5082-504C-4C87-BF80-755F69879BAE} = {9919778B-741C-48AB-B46B-C578AB46DF73}
+		{98DF6424-9C89-4E37-B439-191897652936} = {9919778B-741C-48AB-B46B-C578AB46DF73}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5CEE5E55-7020-44F8-BC0E-7B4EF49B3F1E}

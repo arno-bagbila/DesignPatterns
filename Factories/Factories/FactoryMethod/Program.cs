@@ -1,13 +1,12 @@
 ﻿using System;
-using System.Runtime.CompilerServices;
 
 namespace FactoryMethod
 {
-   public enum CoordinateSystem
-   {
-      Cartesian,
-      Polar
-   }
+   //public enum CoordinateSystem
+   //{
+   //   Cartesian,
+   //   Polar
+   //}
    public class Point
    {
       private double x, y;
@@ -62,6 +61,24 @@ namespace FactoryMethod
       {
          return $"{nameof(x)}: {x}, {nameof(y)}: {y}";
       }
+
+      public static Point Origin => new Point(0, 0);
+
+      public static Point Origin2 = new Point(0, 0); //better
+
+      //move the factory class in the object.
+      public static class Factory
+      {
+         public static Point NewCartesianPoint(double x, double y)
+         {
+            return new Point(x, y);
+         }
+
+         public static Point NewPolarPoint(double rho, double theta)
+         {
+            return new Point(rho * Math.Cos(theta), rho * Math.Sin(theta));
+         }
+      }
    }
    public class Demo
    {
@@ -71,6 +88,23 @@ namespace FactoryMethod
          Console.WriteLine(point);
 
          // Advantage of Factory: you get to have an overload with the same argument dataType - Also the name of the factory method are also unique, not have to be the class name
+
+         var anotherPoint = Point.Factory.NewPolarPoint(1.0, Math.PI / 2);
       }
    }
+
+   //Moving the factory in a separate class: Factory is a separate component which know how to instantiate the class. The issue is that the constructor has to remain public.
+   //We can make the constructor internal, if it will be consume in the same assembly.
+   //public static class PointFactory
+   //{
+   //   public static Point NewCartesianPoint(double x, double y)
+   //   {
+   //      return new Point(x, y);
+   //   }
+
+   //   public static Point NewPolarPoint(double rho, double theta)
+   //   {
+   //      return new Point(rho * Math.Cos(theta), rho * Math.Sin(theta));
+   //   }
+   //}
 }

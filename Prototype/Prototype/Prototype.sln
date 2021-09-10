@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrototypeInheritance", "Pro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopyThroughSerialization", "CopyThroughSerialization\CopyThroughSerialization.csproj", "{3B03BCE7-C4D2-4F79-895D-3B0C3F634F0C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrototypeCodingExercise", "PrototypeCodingExercise\PrototypeCodingExercise.csproj", "{585FD26B-A83B-437C-9CDF-32D565AEE709}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{3B03BCE7-C4D2-4F79-895D-3B0C3F634F0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B03BCE7-C4D2-4F79-895D-3B0C3F634F0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B03BCE7-C4D2-4F79-895D-3B0C3F634F0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{585FD26B-A83B-437C-9CDF-32D565AEE709}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{585FD26B-A83B-437C-9CDF-32D565AEE709}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{585FD26B-A83B-437C-9CDF-32D565AEE709}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{585FD26B-A83B-437C-9CDF-32D565AEE709}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
